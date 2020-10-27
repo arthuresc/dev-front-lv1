@@ -1,0 +1,24 @@
+// export default function handleJson (url, value){
+//     const list = []
+//     const error = '';
+
+//     let buildList = function (data) {
+//         console.log(data);
+//         return list = data;
+//     }
+    
+//     let componentDidMount = function (url){
+//         console.log('did mount')
+//         fetch(url)
+//         .then(response => response.json())
+//         .then(this.buildList)
+//         .catch(error => {
+//             this.error = error;
+//         })
+//     }
+
+//     {this.list.length === 0 && <li>Sorry No data available</li>} {/* trata o erro */}
+//     {this.list.length > 0 && this.state.list.map((item) => ( <img idG={item.login}/> ))}
+
+//     return ({list: buildList, } )
+// }

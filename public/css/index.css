@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+:root{
+    --margin-pattern: auto 1.5vmin;
+}
+body{
+    background-color: #191a1d;
+    font-family: 'Roboto', sans-serif;
+    color: #f1f1f1;
+    display: flex;
+    flex: column;
+    justify-content: center;
+    margin: 0;
+}
+.App{
+    /* padding: 5vmin 0 0 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20vh;
+}
+.Title{
+    text-align: center;
+    background-color: #111113;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* margin: 0 0 5vmin 0; */
+    box-sizing: border-box;
+    width: 100vw;
+    line-height: 10vh;
+    margin: 0;
+    
+}
+
+
+.Card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 50vw;
+    /* min-height: 150px; */
+    height: 100%;
+    background-color: #282b35;
+    margin: 1vmin 0;
+    padding: 1vmin;
+}
+.UserInfos{
+    min-height: 118px;
+    width: auto;
+    flex: 2 4 70%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+    padding: 0 0 0 1vmin;
+}
+
+.Bio{
+    font-style: italic;
+    margin: 0;
+}
+.Container-Line{
+    width: 100%;
+    display: flex;
+    flex: row;
+}
+.UserNick{
+    font-size: large;
+    font-weight: 700;
+    margin: 0 1vmin 0 0;
+}
+.UserName{
+    font-size: large;
+    font-weight: 700;
+    margin: 0 1vmin;    
+}
+.UserEmail{
+}
+
+.Avatar{
+    max-width: 180px;
+    width: 10vmax;
+    max-height: 180px;
+    height: 10vmax;
+    /* flex: 1 2 auto; */
+}
+
+@media screen and (max-width: 916px){
+    .App{
+        height: 100%;
+        width: 100%;
+    }
+    .UserInfos > div{
+        margin: 3% 0;
+    }
+    .Container-Line{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1386px){
+    .UserInfos > div{
+        margin: 1% 0;
+    }
+}

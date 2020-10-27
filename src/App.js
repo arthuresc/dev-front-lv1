@@ -6,7 +6,6 @@ import Title from "./app/page_title.jsx";
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.member = [];
     this.state = {
       list: [],
       members: [],
@@ -19,6 +18,10 @@ export default class App extends React.Component {
     this.setState({ members: this.state.list }); //verificar se precisa de members realmente e se não é possivel extrair dados do this.state.list
     // console.log(this.state.list);
   };
+  addError = (error) => {
+    console.error(error)
+    this.setState({erro: error})
+  }
   buildList = (data) => {
     // console.log("did mount3", data);
 
@@ -39,7 +42,7 @@ export default class App extends React.Component {
       .then((response) => response.json())
       .then(this.buildList)
       .catch((error) => {
-        console.log(error);
+        this.addError(error);
       });
   };
 
